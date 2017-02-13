@@ -10,6 +10,7 @@
     <head>
         <meta charset="utf-8">
         <title>Bertrand Feuille</title>
+        <link rel="stylesheet" href="/css/style_principal.css">
     </head>
     <body>
         <div class="page">
