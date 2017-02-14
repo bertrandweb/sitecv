@@ -1,3 +1,7 @@
+/* import */
+@import "import/mixin.scss"
+@import "import/variable.scss"
+
 /* Ensemble de la page */
 
 body
@@ -27,7 +31,7 @@ header
 
   a
     text-decoration: none
-    color: #3e3e3e
+    color: $couleurdefaut
     padding: 28px 15px
 
 .nom
@@ -35,7 +39,7 @@ header
   flex: 1
   padding-left: 2em
   h1
-    color: #3e3e3e
+    color: $couleurdefaut
 
 /*Image de fond*/
 
@@ -49,10 +53,10 @@ header
   .filtre_hero
     background-color: rgba(0, 0, 0, 0.38)
     height: 90vh
-
   .bienvenue
     text-align: center
     position: relative
     top: 50vh
-
+  button
+    @include border-radius(5px)
 /* Prochain bloc*/

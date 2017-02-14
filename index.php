@@ -16,6 +16,7 @@
             <!-- preloader end  -->
         <header>
           <div class="nom">
+            <!-- Image + logo ici -->
             <h1>Bertrand Feuille Web développeur</h1>
           </div>
             <div id="header" class="navbar_header">
@@ -32,7 +33,10 @@
         <div class="hero">
           <div class="filtre_hero">
             <div class="bienvenue">
-              <h2>Bienvenue</h2>
+              <h1>Site CV de Bertrand Feuille</h1>
+              <h2>Webmaster sur Rouen</h2>
+              <p>Passionné du Web et des nouvelles technologies depuis des années, je me présente aujourd’hui à vous en tant que <span>Webmaster</span>. Un métier qui me permet de mettre à profit mes compétences de développeur web, de graphiste et d’intégrateur.</p>
+              <a href="#"><button class="hvr-bounce-in" type="button" name="">Contactez moi</button></a>
             </div>
           </div>
         </div>

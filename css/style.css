@@ -1,3 +1,4 @@
+/* import */
 /* Ensemble de la page */
 body {
   font-size: 14px;
@@ -23,7 +24,7 @@ header {
     line-height: 3px; }
   header a {
     text-decoration: none;
-    color: #3e3e3e;
+    color: #a67a05;
     padding: 28px 15px; }
 
 .nom {
@@ -31,7 +32,7 @@ header {
   flex: 1;
   padding-left: 2em; }
   .nom h1 {
-    color: #3e3e3e; }
+    color: #a67a05; }
 
 /*Image de fond */
 .hero {
@@ -48,6 +49,11 @@ header {
     text-align: center;
     position: relative;
     top: 50vh; }
+  .hero button {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
 
 /* Prochain bloc */
 
