@@ -1,19 +1,42 @@
 /* import */
 /* Ensemble de la page */
-body {
-  font-size: 14px;
-  line-height: 25px;
-  font-weight: 400;
+* {
   font-family: "Roboto", sans-serif; }
 
+body {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400; }
+
 h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
+
+h3 {
+  font-family: "Monserat", sans-serif;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 4em; }
 
 .span_word {
-  color: #a67a05; }
+  color: #0099ff; }
+
+section {
+  padding: 5em; }
+
+a {
+  text-align: center;
+  text-decoration: none; }
+
+i {
+  color: #0099ff; }
 
 /*Menu header */
 header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
   display: flex;
   text-align: right;
   padding-right: 2em;
@@ -26,14 +49,23 @@ header {
     display: inline;
     line-height: 3px; }
   header a {
-    text-decoration: none;
-    color: #a67a05;
-    padding: 28px 15px; }
+    color: #0a80ac;
+    padding: 28px 15px;
+    font-size: 13px;
+    background-color: transparent !important;
+    padding: 20px 15px;
+    margin: 0 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px; }
 
 .nom {
   text-align: left;
   flex: 1;
   padding-left: 2em; }
+  .nom img {
+    max-height: 55px; }
 
 /*Image de fond */
 .hero {
@@ -49,7 +81,9 @@ header {
   .hero .bienvenue {
     text-align: center;
     position: relative;
-    top: 30vh; }
+    top: 30vh;
+    width: 60%;
+    margin: 0 auto; }
     .hero .bienvenue h1 {
       margin-bottom: 50px; }
     .hero .bienvenue h2 {
@@ -60,45 +94,73 @@ header {
       text-transform: uppercase;
       letter-spacing: 2px;
       text-align: center;
-      color: #0C5;
+      color: #0099ff;
       font-size: 24px;
       font-weight: 300;
       padding: 0.5em;
       width: auto;
-      background: #0D6;
-      border: 1px solid #0D6;
+      background: #0099ff;
+      border: 1px solid #0099ff;
       color: #FFF;
       overflow: hidden;
       transition: all 0.5s; }
       .hero .bienvenue a:hover, .hero .bienvenue a:active {
         text-decoration: none;
-        color: #0C5;
-        border-color: #0C5;
+        color: #0099ff;
+        border-color: #0099ff;
         background: #FFF; }
 
 .competence {
-  background-color: #1c4d9e; }
+  background-color: white; }
+  .competence h4 {
+    margin-bottom: 3em; }
 
 .wrapper {
   display: flex;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  justify-content: center; }
+  .wrapper img {
+    margin-right: 5em; }
   .wrapper .competence_bloc {
     max-width: 400px;
     margin-left: 1em; }
+  .wrapper p {
+    text-align: center; }
 
 .realisation {
-  background-color: #669e85; }
+  background-color: #f8f8f8;
+  padding: 5em; }
+  .realisation img {
+    width: 281px;
+    height: 122px; }
 
 .hero2 {
   background-image: url(../image/landscape.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 20vh;
+  height: 40vh;
   color: white; }
   .hero2 .filtre_hero2 {
     background-color: rgba(0, 0, 0, 0.38);
-    height: 20vh; }
+    height: 40vh; }
+
+.contact {
+  background-color: #222328;
+  color: white; }
+  .contact form input {
+    width: 45%; }
+  .contact .coordonnees {
+    width: 80%;
+    margin: 0 auto; }
+
+footer {
+  background-color: #2b2b2b; }
+  footer p, footer a {
+    color: white;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

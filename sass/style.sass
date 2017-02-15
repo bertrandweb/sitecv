@@ -4,20 +4,43 @@
 
 /* Ensemble de la page */
 
+*
+  font-family: 'Roboto', sans-serif
 body
-  font-size: 14px
+  font-size: 18px
   line-height: 25px
   font-weight: 400
-  font-family: 'Roboto', sans-serif
 
 h1, h2, h3, h4, h5, h6
   margin: 0
+  text-align: center
+
+h3
+  font-family: 'Monserat', sans-serif
+  margin-top: 10px
+  font-weight: 500
+  font-size: 32px
+  margin-bottom: 4em
 
 .span_word
   color: $spanword
+
+section
+  padding: 5em
+
+a
+  text-align: center
+  text-decoration: none
+
+i
+  color: #0099ff
+
 /*Menu header */
 
 header
+  position: fixed
+  z-index: 200
+  width: 100%
   display: flex
   text-align: right
   padding-right: 2em
@@ -32,16 +55,23 @@ header
     line-height: 3px
 
   a
-    text-decoration: none
     color: $couleurdefaut
     padding: 28px 15px
-
+    font-size: 13px
+    background-color: transparent !important
+    padding: 20px 15px
+    margin: 0 5px
+    font-family: 'Roboto', sans-serif
+    font-weight: 500
+    text-transform: capitalize
+    letter-spacing: 1px
 
 .nom
   text-align: left
   flex: 1
   padding-left: 2em
-
+  img
+    max-height: 55px
 
 /*Image de fond*/
 
@@ -59,6 +89,8 @@ header
     text-align: center
     position: relative
     top: 30vh
+    width: 60%
+    margin: 0 auto
     h1
       margin-bottom: 50px
     h2
@@ -75,20 +107,35 @@ header
 
 // SECTION COMPETENCES
 .competence
-  background-color: rgb(28, 77, 158)
+  background-color: rgb(255, 255, 255)
+  h4
+    margin-bottom: 3em
 .wrapper
   display: flex
   width: 80%
   margin: 0 auto
+  justify-content: center
+  img
+    margin-right: 5em
+
   .competence_bloc
     max-width: 400px
     margin-left: 1em
+  p
+    text-align: center
+
+
 
 //SECTION REALISATIONS
 
 .realisation
-  background-color: rgb(102, 158, 133)
+  background-color: #f8f8f8
+  padding: 5em
+  .realisation_bloc
 
+  img
+    width: 281px
+    height: 122px
 
   // Image de fong 2 HERO2
 
@@ -97,10 +144,30 @@ header
   background-repeat: no-repeat
   background-attachment: fixed
   background-size: cover
-  height: 20vh
+  height: 40vh
   color: white
   .filtre_hero2
     background-color: rgba(0, 0, 0, 0.38)
-    height: 20vh
+    height: 40vh
 
 // SECTION CONTACT
+
+.contact
+  background-color: #222328
+  color: white
+  form
+    input
+      width: 45%
+  .coordonnees
+    width: 80%
+    margin: 0 auto
+
+// FOOTER
+
+footer
+  background-color: rgb(43, 43, 43)
+  p, a
+    color: white
+    margin: 0
+    padding: 1em 0
+    text-align: center
