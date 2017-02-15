@@ -9,6 +9,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+.span_word {
+  color: #a67a05; }
+
 /*Menu header */
 header {
   display: flex;
@@ -31,8 +34,6 @@ header {
   text-align: left;
   flex: 1;
   padding-left: 2em; }
-  .nom h1 {
-    color: #a67a05; }
 
 /*Image de fond */
 .hero {
@@ -40,21 +41,64 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 90vh;
+  height: 95vh;
   color: white; }
   .hero .filtre_hero {
     background-color: rgba(0, 0, 0, 0.38);
-    height: 90vh; }
+    height: 95vh; }
   .hero .bienvenue {
     text-align: center;
     position: relative;
-    top: 50vh; }
-  .hero button {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px; }
+    top: 30vh; }
+    .hero .bienvenue h1 {
+      margin-bottom: 50px; }
+    .hero .bienvenue h2 {
+      margin-bottom: 50px; }
+    .hero .bienvenue p {
+      margin-bottom: 50px; }
+    .hero .bienvenue a {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #0C5;
+      font-size: 24px;
+      font-weight: 300;
+      padding: 0.5em;
+      width: auto;
+      background: #0D6;
+      border: 1px solid #0D6;
+      color: #FFF;
+      overflow: hidden;
+      transition: all 0.5s; }
+      .hero .bienvenue a:hover, .hero .bienvenue a:active {
+        text-decoration: none;
+        color: #0C5;
+        border-color: #0C5;
+        background: #FFF; }
 
-/* Prochain bloc */
+.competence {
+  background-color: #1c4d9e; }
+
+.wrapper {
+  display: flex;
+  width: 80%;
+  margin: 0 auto; }
+  .wrapper .competence_bloc {
+    max-width: 400px;
+    margin-left: 1em; }
+
+.realisation {
+  background-color: #669e85; }
+
+.hero2 {
+  background-image: url(../image/landscape.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20vh;
+  color: white; }
+  .hero2 .filtre_hero2 {
+    background-color: rgba(0, 0, 0, 0.38);
+    height: 20vh; }
 
 /*# sourceMappingURL=style.css.map */

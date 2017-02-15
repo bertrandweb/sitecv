@@ -13,6 +13,8 @@ body
 h1, h2, h3, h4, h5, h6
   margin: 0
 
+.span_word
+  color: $spanword
 /*Menu header */
 
 header
@@ -34,12 +36,12 @@ header
     color: $couleurdefaut
     padding: 28px 15px
 
+
 .nom
   text-align: left
   flex: 1
   padding-left: 2em
-  h1
-    color: $couleurdefaut
+
 
 /*Image de fond*/
 
@@ -48,15 +50,57 @@ header
   background-repeat: no-repeat
   background-attachment: fixed
   background-size: cover
-  height: 90vh
+  height: 95vh
   color: white
   .filtre_hero
     background-color: rgba(0, 0, 0, 0.38)
-    height: 90vh
+    height: 95vh
   .bienvenue
     text-align: center
     position: relative
-    top: 50vh
-  button
-    @include border-radius(5px)
-/* Prochain bloc*/
+    top: 30vh
+    h1
+      margin-bottom: 50px
+    h2
+      margin-bottom: 50px
+    p
+      margin-bottom: 50px
+      // le boutton ne fonctionnne pas voir pourquoi
+    a
+      @include button()
+      &:hover, &:active
+        @include button-hover()
+
+
+
+// SECTION COMPETENCES
+.competence
+  background-color: rgb(28, 77, 158)
+.wrapper
+  display: flex
+  width: 80%
+  margin: 0 auto
+  .competence_bloc
+    max-width: 400px
+    margin-left: 1em
+
+//SECTION REALISATIONS
+
+.realisation
+  background-color: rgb(102, 158, 133)
+
+
+  // Image de fong 2 HERO2
+
+.hero2
+  background-image: url(../image/landscape.jpg)
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover
+  height: 20vh
+  color: white
+  .filtre_hero2
+    background-color: rgba(0, 0, 0, 0.38)
+    height: 20vh
+
+// SECTION CONTACT
