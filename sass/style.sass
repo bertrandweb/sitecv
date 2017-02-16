@@ -2,6 +2,7 @@
 @import "import/mixin.scss"
 @import "import/variable.scss"
 
+
 /* Ensemble de la page */
 
 *
@@ -22,6 +23,14 @@ h3
   font-size: 32px
   margin-bottom: 4em
 
+h4, h5
+  font-family: 'Monserat', sans-serif
+
+h4
+  margin-top: 10px
+h5
+  margin-top: 5px
+
 .span_word
   color: $spanword
 
@@ -33,7 +42,7 @@ a
   text-decoration: none
 
 i
-  color: #0099ff
+  color: $iconcolor_skill
 
 /*Menu header */
 
@@ -49,6 +58,9 @@ header
   max-height: 60px
   background-color: rgb(255, 255, 255)
 
+  .nom
+    display: flex
+    align-items: center
   li
     list-style-type: none
     display: inline
@@ -80,11 +92,11 @@ header
   background-repeat: no-repeat
   background-attachment: fixed
   background-size: cover
-  height: 95vh
+  height: 100vh
   color: white
   .filtre_hero
     background-color: rgba(0, 0, 0, 0.38)
-    height: 95vh
+    height: 100vh
   .bienvenue
     text-align: center
     position: relative
@@ -103,24 +115,33 @@ header
       &:hover, &:active
         @include button-hover()
 
+//SECTION Présentation
 
+.presentation_bloc
+  background-color: rgb(255, 255, 255)
+//Reprend le wrapper de la section competence
 
 // SECTION COMPETENCES
 .competence
-  background-color: rgb(255, 255, 255)
-  h4
-    margin-bottom: 3em
+  background-color: #f8f8f8
 .wrapper
   display: flex
-  width: 80%
+  width: 95%
   margin: 0 auto
   justify-content: center
+  align-items: center
   img
     margin-right: 5em
 
   .competence_bloc
-    max-width: 400px
-    margin-left: 1em
+    // max-width: 400px
+    // margin-left: 1em
+    background-color: #ffffff
+    border: 1px solid rgba(238, 238, 238, 0.65)
+    text-align: center
+    padding: 35px 25px 20px
+    margin-top: 30px
+    border-radius: 2px
   p
     text-align: center
 
@@ -131,11 +152,11 @@ header
 .realisation
   background-color: #f8f8f8
   padding: 5em
-  .realisation_bloc
+
 
   img
-    width: 281px
-    height: 122px
+    max-width: 300px
+    max-height: 300px
 
   // Image de fong 2 HERO2
 
@@ -152,15 +173,53 @@ header
 
 // SECTION CONTACT
 
-.contact
+.formulaire_contact
   background-color: #222328
   color: white
   form
-    input
-      width: 45%
-  .coordonnees
-    width: 80%
+    width: 60%
     margin: 0 auto
+    text-align: center
+    input
+      background: #ffffff
+      border: 1px solid rgba(238, 238, 238, 0.65)
+      min-height: 40px
+      width: 49.5%
+    input[type="submit"]
+      @include button()
+      &:hover, &:active
+        @include button-hover()
+    textarea
+      width: 100%
+
+.wrapper_contact
+  padding-top: 1em
+  display: flex
+  width: 80%
+  margin: 0 auto
+  justify-content: center
+  align-items: center
+
+  .contact_adress
+    text-align: center
+    width: 30%
+    i
+      color: $iconcolor_contact
+.social_network
+  margin-top: 100px
+  text-align: center
+  p
+
+    i
+      color: $iconcolor_contact
+      &:first-child:hover
+        color: #4099ff
+      &:hover
+        color: #4875B4
+    a
+      margin-right: 15px
+
+
 
 // FOOTER
 
