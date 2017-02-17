@@ -87,6 +87,16 @@
               <p><i class="fa  fa-comments-o fa-4x"></i></p>
               <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
             </div>
+            <div class="competence_bloc">
+              <p><a href="#">Communication</a></p>
+              <p><i class="fa  fa-comments-o fa-4x"></i></p>
+              <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
+            </div>
+            <div class="competence_bloc">
+              <p><a href="#">Communication</a></p>
+              <p><i class="fa  fa-comments-o fa-4x"></i></p>
+              <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
+            </div>
           </div>
         </section>
         <!-- debut image background -->
@@ -112,7 +122,7 @@
           </div>
         </section>
         <!-- debut image background -->
-        <div class="hero2">
+        <div class="hero3">
         <div class="filtre_hero2">
         </div>
         </div>

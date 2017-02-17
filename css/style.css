@@ -29,7 +29,7 @@ h5 {
   margin-top: 5px; }
 
 .span_word {
-  color: #0099ff; }
+  color: #ff931e; }
 
 section {
   padding: 5em; }
@@ -39,7 +39,7 @@ a {
   text-decoration: none; }
 
 i {
-  color: #0099ff; }
+  color: #ff931e; }
 
 /*Menu header */
 header {
@@ -61,7 +61,7 @@ header {
     display: inline;
     line-height: 3px; }
   header a {
-    color: #0a80ac;
+    color: #ff931e;
     padding: 28px 15px;
     font-size: 13px;
     background-color: transparent !important;
@@ -81,7 +81,7 @@ header {
 
 /*Image de fond */
 .hero {
-  background-image: url(../image/landscape.jpg);
+  background-image: url(../image/accueil-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -106,20 +106,20 @@ header {
       text-transform: uppercase;
       letter-spacing: 2px;
       text-align: center;
-      color: #0099ff;
+      color: #ff931e;
       font-size: 24px;
       font-weight: 300;
       padding: 0.5em;
       width: auto;
-      background: #0099ff;
-      border: 1px solid #0099ff;
+      background: #ff931e;
+      border: 1px solid #ff931e;
       color: #FFF;
       overflow: hidden;
       transition: all 0.5s; }
       .hero .bienvenue a:hover, .hero .bienvenue a:active {
         text-decoration: none;
-        color: #0099ff;
-        border-color: #0099ff;
+        color: #ff931e;
+        border-color: #ff931e;
         background: #FFF;
         cursor: pointer; }
 
@@ -134,36 +134,49 @@ header {
   width: 95%;
   margin: 0 auto;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .wrapper img {
     margin-right: 5em; }
   .wrapper .competence_bloc {
+    max-width: 400px;
+    height: 330px;
     background-color: #ffffff;
     border: 1px solid rgba(238, 238, 238, 0.65);
     text-align: center;
     padding: 35px 25px 20px;
-    margin-top: 30px;
-    border-radius: 2px; }
+    margin: 20px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2); }
   .wrapper p {
     text-align: center; }
 
-.realisation {
-  background-color: #f8f8f8;
-  padding: 5em; }
-  .realisation img {
-    max-width: 300px;
-    max-height: 300px; }
-
 .hero2 {
-  background-image: url(../image/landscape.jpg);
+  background-image: url(../image/accueil-background2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 40vh;
   color: white; }
-  .hero2 .filtre_hero2 {
-    background-color: rgba(0, 0, 0, 0.38);
-    height: 40vh; }
+
+.filtre_hero2 {
+  background-color: rgba(0, 0, 0, 0.38);
+  height: 40vh; }
+
+.realisation {
+  background-color: #f8f8f8;
+  padding: 5em; }
+  .realisation img {
+    width: 300px;
+    height: 300px; }
+
+.hero3 {
+  background-image: url(../image/accueil-background3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40vh;
+  color: white; }
 
 .formulaire_contact {
   background-color: #222328;
@@ -181,20 +194,20 @@ header {
       text-transform: uppercase;
       letter-spacing: 2px;
       text-align: center;
-      color: #0099ff;
+      color: #ff931e;
       font-size: 24px;
       font-weight: 300;
       padding: 0.5em;
       width: auto;
-      background: #0099ff;
-      border: 1px solid #0099ff;
+      background: #ff931e;
+      border: 1px solid #ff931e;
       color: #FFF;
       overflow: hidden;
       transition: all 0.5s; }
       .formulaire_contact form input[type="submit"]:hover, .formulaire_contact form input[type="submit"]:active {
         text-decoration: none;
-        color: #0099ff;
-        border-color: #0099ff;
+        color: #ff931e;
+        border-color: #ff931e;
         background: #FFF;
         cursor: pointer; }
     .formulaire_contact form textarea {

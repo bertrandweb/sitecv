@@ -10,7 +10,7 @@
   text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    color: #0099ff;
+    color: #ff931e;
 
     font-size: 24px;
     font-weight: 300;
@@ -18,8 +18,8 @@
     padding: 0.5em;
     width: auto;
 
-    background: #0099ff;
-    border: 1px solid #0099ff;
+    background: #ff931e;
+    border: 1px solid #ff931e;
     color: #FFF;
     overflow: hidden;
 
@@ -28,8 +28,8 @@
 
 @mixin button-hover () {
   text-decoration: none;
- color: #0099ff;
- border-color: #0099ff;
+ color: #ff931e;
+ border-color: #ff931e;
  background: #FFF;
  cursor: pointer;
  }
