@@ -40,7 +40,7 @@
             </nav>
         </header>
         <!-- Image de fond -->
-        <div class="hero">
+        <div data-midnight="welcome" class="hero">
           <div class="filtre_hero">
             <div class="bienvenue">
               <h1>Site CV de Bertrand Feuille</h1>
@@ -98,6 +98,7 @@
               <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
             </div>
           </div>
+          <a class="button" href="#"><span>Plus d'informations</span></a>
         </section>
         <!-- debut image background -->
         <div class="hero2">
@@ -111,13 +112,13 @@
           </div>
           <div class="wrapper">
             <div class="realisation_bloc">
-              <a href="http://ikedori.bertrandfeuille.fr" target=_blank><img src="./image/realisation_ikedori.png" alt="logo de ikedori"></a>
+              <a href="http://ikedori.bertrandfeuille.fr" target=_blank><img src="./image/realisation3.jpg" alt="logo de ikedori"></a>
             </div>
             <div class="realisation_bloc">
-              <a href="http://www.influenceursduweb.org/" target=_blank><img src="./image/realisation_influenceur.png" alt="logo des influenceurs du web"></a>
+              <a href="http://www.influenceursduweb.org/" target=_blank><img src="./image/realisation2.jpg" alt="logo des influenceurs du web"></a>
             </div>
             <div class="realisation_bloc">
-              <a href="http://www.webmaster-formation.fr/r" target=_blank><img src="./image/realisation_webmaster.png" alt="logo de ikedori"></a>
+              <a href="http://www.webmaster-formation.fr/r" target=_blank><img src="./image/realisation1.jpg" alt="logo de ikedori"></a>
             </div>
           </div>
         </section>
@@ -170,6 +171,7 @@
 
         <!-- JS -->
         <script type="text/javascript" src="./js/jquery-3.1.1.js"></script>
+        </script>
 
     </body>
 </html>
