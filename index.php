@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/normalized.css">
         <link rel="stylesheet" href="./css/style.css">
 
+
         <!-- FAVICON -->
         <link rel="icon" type="image/png" href="./image/logofavicon.png" />
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico" /><![endif]-->
@@ -19,17 +20,14 @@
     </head>
     <body>
         <div class="page">
-            <!-- preloader start  -->
-            <div id="loading" class="loading"></div>
-            <!-- preloader end  -->
         <header>
           <div class="nom">
             <!-- Image + logo ici -->
             <img src="./image/logo2_site_cv.png" alt="logo de bertrand feuille">
             <p>Bertrand Feuille</p>
-
           </div>
-            <nav id="header" class="navbar_header">
+            <nav id="header" class="navbar_header navbar navbar_default">
+              <i class="fa fa-bars"></i>
               <ul>
                 <li><a class="hvr-underline-reveal href" href="#header">Accueil</a></li>
                 <li><a class="hvr-underline-reveal href" href="#presentation">Présentation</a></li>
@@ -171,7 +169,7 @@
 
         <!-- JS -->
         <script type="text/javascript" src="./js/jquery-3.1.1.js"></script>
-        </script>
+        <script type="text/javascript" src="./js/master.js"></script>
 
     </body>
 </html>
