@@ -27,16 +27,29 @@
             <p>Bertrand Feuille</p>
           </div>
             <nav id="header" class="navbar_header navbar navbar_default">
-              <i class="fa fa-bars"></i>
               <ul>
-                <li><a class="hvr-underline-reveal href" href="#header">Accueil</a></li>
-                <li><a class="hvr-underline-reveal href" href="#presentation">Présentation</a></li>
-                <li><a class="hvr-underline-reveal href" href="#competence">Compétences</a></li>
-                <li><a class="hvr-underline-reveal href" href="#realisation">Réalisations</a></li>
-                <li><a class="hvr-underline-reveal href" href="#formulaire">Contact</a></li>
+                <li><i class="fa fa-bars" id="burger_menu" aria-hidden="true"></i></li>
+                <li><a class="hvr-underline-reveal" href="#header">Accueil</a></li>
+                <li><a class="hvr-underline-reveal" href="#presentation">Présentation</a></li>
+                <li><a class="hvr-underline-reveal" href="#competence">Compétences</a></li>
+                <li><a class="hvr-underline-reveal" href="#realisation">Réalisations</a></li>
+                <li><a class="hvr-underline-reveal" href="#formulaire">Contact</a></li>
               </ul>
             </nav>
+
         </header>
+        <!-- Menu responsive -->
+        <div class="menu_responsive">
+          <nav>
+            <ul>
+              <li><a class="" href="#header">Accueil</a></li>
+              <li><a class="" href="#presentation">Présentation</a></li>
+              <li><a class="" href="#competence">Compétences</a></li>
+              <li><a class="" href="#realisation">Réalisations</a></li>
+              <li><a class="" href="#formulaire">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
         <!-- Image de fond -->
         <div data-midnight="welcome" class="hero">
           <div class="filtre_hero">
@@ -113,10 +126,10 @@
               <a href="http://ikedori.bertrandfeuille.fr" target=_blank><img src="./image/realisation3.jpg" alt="logo de ikedori"></a>
             </div>
             <div class="realisation_bloc">
-              <a href="http://www.influenceursduweb.org/" target=_blank><img src="./image/realisation2.jpg" alt="logo des influenceurs du web"></a>
+              <a href="http://www.influenceursduweb.org/" target=_blank><img src="./image/realisation1.jpg" alt="logo des influenceurs du web"></a>
             </div>
             <div class="realisation_bloc">
-              <a href="http://www.webmaster-formation.fr/r" target=_blank><img src="./image/realisation1.jpg" alt="logo de ikedori"></a>
+              <a href="http://www.webmaster-formation.fr" target=_blank><img src="./image/realisation2.jpg" alt="logo de ikedori"></a>
             </div>
           </div>
         </section>
@@ -144,14 +157,12 @@
                 <h5>06 26 49 48 49</h5>
               </div>
               <div class="contact_adress">
-                <p><i class="fa  fa-download fa-2x"></i></p>
-                <h4>CV</h4>
-                <h5><a href="#">Télécharger CV</a></h5>
+                <a href="#"><img src="./image/logo_cv.jpg" alt=""></a>
               </div>
               <div class="contact_adress">
                 <p><i class="fa  fa-envelope-o fa-2x"></i></p>
                 <h4>Email</h4>
-                <h5>contact@bertrandfeuille.fr</h5>
+                <h5><a href="#">contact@bertrandfeuille.fr</a></h5>
               </div>
             </div>
             <div class="social_network">

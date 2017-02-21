@@ -21,7 +21,7 @@ h3
   margin-top: 10px
   font-weight: 500
   font-size: 32px
-  margin-bottom: 4em
+  margin-bottom: 2em
 
 h4, h5
   font-family: 'Monserat', sans-serif
@@ -43,6 +43,10 @@ a
 
 i
   color: $iconcolor_skill
+ul
+  padding: 0
+hr
+  margin: 0
 
 /*Menu header */
 
@@ -66,18 +70,24 @@ header
     list-style-type: none
     display: inline
     line-height: 3px
+  ul
+    margin: 0
 
+  i
+    cursor: pointer
   a
     color: $couleurdefaut
     padding: 28px 15px
     font-size: 13px
     background-color: transparent !important
-    padding: 20px 15px
     margin: 0 5px
     font-family: 'Roboto', sans-serif
     font-weight: 500
     text-transform: capitalize
     letter-spacing: 1px
+    transition: 0.2s ease
+    &:hover
+      color: black
 
 .nom
   text-align: left
@@ -85,6 +95,46 @@ header
   padding-left: 2em
   img
     max-height: 55px
+
+/*----------------------------------------------*/
+/*                    Menu humburger              */
+/*------------------------------------------------*/
+.menu_responsive
+  z-index: 2
+  position: absolute
+  width: 100%
+  position: fixed
+
+
+  line-height: 40px
+  color: white
+  background-color: #222330
+  border-bottom: 12px solid $spanword
+
+  transition: transform .6s ease-in-out
+  -webkit-transition: transform .6s ease-in-out
+  transform: translateY(-100%)
+
+  li
+
+    list-style-type: none
+    margin-top: 22px
+    padding: 10px 0
+
+    a
+      color: white
+      padding: 25px 100vw 25px 60px
+      transition: 0.3s ease-in-out
+
+      &:hover
+        background-color: #aaaaaa
+        color: black
+
+.isopen
+  transform: translateY(10%)
+  -webkit-transform: translateY(10%)
+
+
 
 /*Image de fond*/
 
@@ -139,8 +189,6 @@ header
   align-items: center
   flex-wrap: wrap
   margin-bottom: 2em
-  img
-    margin-right: 5em
 
   .competence_bloc
     max-width: 400px
@@ -226,6 +274,11 @@ header
   margin: 0 auto
   justify-content: center
   align-items: center
+  a
+    color: black
+    transition: ease 0.2s
+  a:hover
+    color: $couleurdefaut
 
   .contact_adress
     text-align: center
@@ -246,8 +299,6 @@ header
     a
       margin-right: 15px
 
-
-
 // FOOTER
 
 footer
@@ -261,13 +312,7 @@ footer
 
 
 /*----------------------------------------------*/
-                      // Responsive
+                      /*Responsive*/
 /*------------------------------------------------*/
 
-// @media only screen and (max-width: 750px)
 
-
-
-/*----------------------------------------------*/
-                      // Hamburger menu
-/*------------------------------------------------*/
