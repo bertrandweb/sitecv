@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,11 +34,11 @@
             <nav id="header" class="navbar_header navbar navbar_default">
               <ul>
                 <li><i class="fa fa-bars" id="burger_menu" aria-hidden="true"></i></li>
-                <li><a class="hvr-underline-reveal" href="#header">Accueil</a></li>
-                <li><a class="hvr-underline-reveal" href="#presentation">Présentation</a></li>
-                <li><a class="hvr-underline-reveal" href="#competence">Compétences</a></li>
-                <li><a class="hvr-underline-reveal" href="#realisation">Réalisations</a></li>
-                <li><a class="hvr-underline-reveal" href="#formulaire">Contact</a></li>
+                <li><a class="hvr-underline-reveal scroll" href="#accueil">Accueil</a></li>
+                <li><a class="hvr-underline-reveal scroll" href="#presentation">Présentation</a></li>
+                <li><a class="hvr-underline-reveal scroll" href="#competence">Compétences</a></li>
+                <li><a class="hvr-underline-reveal scroll" href="#realisation">Réalisations</a></li>
+                <li><a class="hvr-underline-reveal scroll" href="#formulaire">Contact</a></li>
               </ul>
             </nav>
 
@@ -42,22 +47,22 @@
         <div class="menu_responsive">
           <nav>
             <ul>
-              <li><a class="" href="#header">Accueil</a></li>
-              <li><a class="" href="#presentation">Présentation</a></li>
-              <li><a class="" href="#competence">Compétences</a></li>
-              <li><a class="" href="#realisation">Réalisations</a></li>
-              <li><a class="" href="#formulaire">Contact</a></li>
+              <li><a class="scroll" href="#accueil">Accueil</a></li>
+              <li><a class="scroll" href="#presentation">Présentation</a></li>
+              <li><a class="scroll" href="#competence">Compétences</a></li>
+              <li><a class="scroll" href="#realisation">Réalisations</a></li>
+              <li><a class="scroll" href="#formulaire">Contact</a></li>
             </ul>
           </nav>
         </div>
         <!-- Image de fond -->
-        <div data-midnight="welcome" class="hero">
+        <div id="accueil" class="hero">
           <div class="filtre_hero">
             <div class="bienvenue">
               <h1>Site CV de Bertrand Feuille</h1>
               <h2><span class="span_word">Webmaster</span> sur Rouen</h2>
               <p>Passionné du Web et des nouvelles technologies depuis des années, je me présente aujourd’hui à vous en tant que <span>Webmaster</span>. Un métier qui me permet de mettre à profit mes compétences de développeur web, de graphiste et d’intégrateur.</p>
-              <a class="button" href="#formulaire"><span>Contact</span></a>
+              <a class="button scroll" href="#formulaire"><span>Contact</span></a>
             </div>
           </div>
         </div>
@@ -109,7 +114,7 @@
               <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
             </div>
           </div>
-          <a class="button" href="#"><span>Plus d'informations</span></a>
+          <a class="button" href="./pdf/bertrand_feuille_cv.pdf"><span>Plus d'informations</span></a>
         </section>
         <!-- debut image background -->
         <div class="hero2">
@@ -139,15 +144,16 @@
         </div>
         </div>
         <!-- fin image background -->
-        <!-- Section contatact -->
+        <!-- Section contact -->
         <section id="formulaire" class="formulaire_contact">
           <h3>Me contacter</h3>
-            <form class="" action="index.html" method="post">
-              <p><input type="text" name="" value="" placeholder="Nom">
-              <input type="email" name="" value="" placeholder="Adresse e-mail"></p>
-              <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
-              <p><input type="submit" name="" value="Envoi"></p>
-            </form>
+                <form id="form1" name="form1" action="contact.php" method="post">
+                    <p><input type="text" name="name" maxlength="50" value="" placeholder="Nom" value="">
+                    <input type="email" name="email" maxlength="50" value="" placeholder="Adresse e-mail"value=""></p>
+                    <textarea name="message"  rows="8" cols="80" placeholder="Message"></textarea>
+                    <p><input type="submit"  value="Envoyer"></p>
+                </form>
+
         </section>
         <section>
             <div class="wrapper_contact">
@@ -157,7 +163,7 @@
                 <h5>06 26 49 48 49</h5>
               </div>
               <div class="contact_adress">
-                <a href="#"><img src="./image/logo_cv.jpg" alt=""></a>
+                <a href="./pdf/bertrand_feuille_cv.pdf"><img src="./image/logo_cv.jpg" alt=""></a>
               </div>
               <div class="contact_adress">
                 <p><i class="fa  fa-envelope-o fa-2x"></i></p>
@@ -168,7 +174,7 @@
             <div class="social_network">
               <p>
                 <a href="https://twitter.com/Bertrand_Web" target=_blank><i class="fa  fa-twitter fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/bertrand-feuille-6ba79aaa?authType=NAME_SEARCH&authToken=_4O6&locale=fr_FR&srchid=3901246541487256692129&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A3901246541487256692129%2CVSRPtargetId%3A390124654%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3ANAME_SEARCH" target=_blank><i class="fa  fa-linkedin-square fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/bertrand-feuille-6ba79aaa?authType=NAME_SEARCH&authToken=_4O6&locale=fr_FR&srchid=3901246541487256692129&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A3901246541487256692129%2CVSRPtargetId%3A390124654%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3ANAME_SEARCH" target=_blank><i id="linkedin" class="fa  fa-linkedin-square fa-2x"></i></a>
               </p>
             </div>
         </section>
