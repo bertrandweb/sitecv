@@ -412,21 +412,27 @@ footer {
   /*----------------------------------------------*/
   /*Responsive - Bienvenue */
   /*------------------------------------------------ */
+
   .hero .bienvenue {
-    top: 20vh;
+    position: inherit;
+    top: 0;
     font-size: 14px;
     margin-bottom: 5em;
   }
+  .bienvenue h1 {
+    /*padding-top: 2em;*/
+  }
+
   /*----------------------------------------------*/
   /*Responsive - Héro */
   /*------------------------------------------------ */
   .hero {
-    height: 110vh;
+    background-size: cover;
+    background-attachment: inherit;
   }
 
   .hero .filtre_hero {
-    background-color: rgba(0, 0, 0, 0.38);
-    height: 110vh;
+    height: auto;
   }
 
   .hero .button {
@@ -437,8 +443,7 @@ footer {
   /*Responsive - Réalisation */
   /*------------------------------------------------ */
   .realisation img {
-  width: 80%;
-    margin: 0 auto;
+  width: 95%;
   }
 
   /*----------------------------------------------*/
@@ -457,7 +462,7 @@ footer {
   /*------------------------------------------------ */
 
   .hero2 {
-    background-size: contain;
+    background-size: cover;
     background-attachment: inherit;
  }
 
@@ -479,9 +484,8 @@ footer {
   /*Responsive - héro3 */
   /*------------------------------------------------ */
   .hero3 {
-    background-size: contain;
+    background-size: cover;
     background-attachment: inherit;
-    vertical-align: bottom;
   }
 
   .filtre_hero3 {
@@ -506,8 +510,10 @@ height: auto;
   .wrapper_contact .contact_adress {
      width: auto;
     margin-top: 2.5em;
-
   }
+
+  .formulaire_contact form textarea {
+    width: 103%; }
 
 }
 
