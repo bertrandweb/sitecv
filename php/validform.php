@@ -52,7 +52,7 @@
       } else {
         if (empty($_POST['message'])) {
           $nombreErreur++;
-          $erreur5 = '<p>Vous avez oublié de donner un message.</p>';
+          $erreur5 = '<p>Vous avez oublié de mettre un message.</p>';
         }
       }    // (3) Ici, il sera possible d'ajouter plus tard un code pour vérifier un captcha anti-spam.
 

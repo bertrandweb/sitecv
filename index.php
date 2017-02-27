@@ -4,7 +4,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,8 +63,8 @@
         <div class="filtre_hero">
             <div class="bienvenue">
                 <h1>Site CV de Bertrand Feuille</h1>
-                <h2><span class="span_word">Webmaster</span> sur Rouen</h2>
-                <p>Passionné du Web et des nouvelles technologies depuis des années, je me présente aujourd’hui à vous en tant que <span>Webmaster</span>. Un métier qui me permet de mettre à profit mes compétences de développeur web, de graphiste et d’intégrateur.</p>
+                <h2><span class="span_word">Web Développeur/Webmaster</span> sur Rouen</h2>
+                <p>Passionné du Web et des nouvelles technologies depuis des années, je me présente aujourd’hui à vous en tant que <span>Web développeur & Webmaster</span>. Un métier qui me permet de mettre à profit mes compétences dans les domaines du  web développement, du référencement naturel et du graphisme.</p>
                 <a class="button scroll" href="#formulaire"><span>Contact</span></a>
             </div>
         </div>
@@ -75,10 +75,10 @@
             <div class="photo"><img src="./image/logo2_site_cv.png" alt=""></div>
             <div class="presentation">
                 <h3>Présentation</h3>
-                <p><strong>Après un BTS en informatique m’ayant formé en programmation, réseaux, développement web, j’ai choisi de compléter mon profil technique avec des compétences en graphisme, communication web et référencement.</strong></p>
-                <p>La Formation Qualifiante Webmaster du lycée Saliège m’a donné les outils pour concevoir,
-                    organiser, intégrer et animer un site web. J’ai pu mettre en application lors de mes différentes
-                    expériences professionnelles en tant que webdesigner- intégrateur au sein d’une équipes. Je perfectionne chaque jour ces compétences que ce soit pour mes projets personnels ou pour les projets de mes clients en tant qu’auto-entrepreneur.</p>
+                <p><strong>Après une formation de webmaster m'ayant donné des compétences dans les métiers du web, j’ai choisi de compléter mon profil technique avec des compétences en programmation et web développement.</strong></p>
+                <p>La formation webforce 3 m'a donnée les outils pour développer, organiser et intégrer un site web. Du php au javascript, cette formation m'a
+                    permis de me former sur différents langages de programation.
+                    Je perfectionne chaque jour ces compétences dans mes projets personnels.</p>
             </div>
 
         </div>
@@ -89,12 +89,12 @@
             <div class="competence_bloc">
                 <p><a href="#">Développement</a></p>
                 <p><i class="fa fa-code fa-4x"></i></p>
-                <p>Utilisant les langages HTML 5, CSS3 et PHP depuis plus de 5 ans, je maîtrise également Javascript et jQuery ce qui me confère les connaissances nécessaires pour modifier les CMS rencontré ou m’adapter aux nouvelles techniques des projets réalisés</p>
+                <p>Utilisant les langages HTML 5, CSS3 et PHP, j'améliore également mes compétences en Javascript et jQuery ce qui me confère les connaissances nécessaires pour m’adapter aux nouvelles techniques des projets réalisés</p>
             </div>
             <div class="competence_bloc">
                 <p><a href="#">Graphisme</a></p>
                 <p><i class="fa fa-picture-o fa-4x"></i></p>
-                <p>Maitrisant Photoshop et Illustrator je réalise les visuels dont j’ai besoin, les maquettes et charte graphique de site web. J’utilise ma créativité pour créer des logos, flyers, et retouches d’image.</p>
+                <p>Utilisant Photoshop, Illustrator et In design, je réalise les maquettes et charte graphique de site web dont j'ai besoin. J’utilise ma créativité pour créer des logos, et retouches d’image.</p>
             </div>
             <div class="competence_bloc">
                 <p><a href="#">Responsive Design</a></p>
@@ -104,17 +104,17 @@
             <div class="competence_bloc">
                 <p><a href="#">Communication</a></p>
                 <p><i class="fa  fa-comments-o fa-4x"></i></p>
-                <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
+                <p>Ayant une expérience en tant que Community Manager, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux.</p>
             </div>
             <div class="competence_bloc">
-                <p><a href="#">Communication</a></p>
-                <p><i class="fa  fa-comments-o fa-4x"></i></p>
-                <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
+                <p><a href="#">Référencement Naturel</a></p>
+                <p><i class="fa fa-bar-chart fa-4x"></i></p>
+                <p>L'objectif premier du référencement est d'accroître la visibilité et l'audience des sites à l'aide de techniques spécifiques. Grâce à ma formation de webmaster je maîtrise certaines de ces compétences pour atteindre cette objectif.</p>
             </div>
             <div class="competence_bloc">
-                <p><a href="#">Communication</a></p>
-                <p><i class="fa  fa-comments-o fa-4x"></i></p>
-                <p>Afin d’assurer la visibilité d’un site internet, je sais mettre en place une stratégie de communication et d’acquisition de trafic en utilisant différents leviers tels que les réseaux sociaux et le référencement naturel.</p>
+                <p><a href="#">Webmarketing</a></p>
+                <p><i class="fa fa-pie-chart fa-4x"></i></p>
+                <p>Étant issue de l'univers du Marketing avant de m'insérer dans le milieu du web, je possède des compétences qui me permettent de développer une relation durable de fidélisation avec les internautes d'un site web et des médias sociaux. </p>
             </div>
         </div>
         <a class="button" href="./pdf/bertrand_feuille_cv.pdf"><span>Plus d'informations</span></a>
@@ -195,6 +195,16 @@
 <!-- JS -->
 <script type="text/javascript" src="./js/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="./js/master.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57416169-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
