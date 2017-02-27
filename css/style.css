@@ -6,7 +6,9 @@
 body {
   font-size: 18px;
   line-height: 25px;
-  font-weight: 400; }
+  font-weight: 400;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -32,7 +34,8 @@ h5 {
   color: #ff931e; }
 
 section {
-  padding: 5em; }
+  padding: 5em;
+}
 
 a {
   text-align: center;
@@ -123,7 +126,11 @@ header {
   transform: translateY(10%);
   -webkit-transform: translateY(10%); }
 
-/*Image de fond */
+/*----------------------------------------------*/
+
+/* hero 1 */
+
+/*------------------------------------------------ */
 .hero {
   background-image: url(../image/accueil-background.jpg);
   background-repeat: no-repeat;
@@ -167,8 +174,20 @@ header {
         background: #FFF;
         cursor: pointer; }
 
+/*----------------------------------------------*/
+
+/* présentation */
+
+/*------------------------------------------------ */
+
 .presentation_bloc {
   background-color: white; }
+
+/*----------------------------------------------*/
+
+/* Compétences */
+
+/*------------------------------------------------ */
 
 .competence {
   text-align: center;
@@ -224,6 +243,12 @@ header {
   .wrapper p {
     text-align: center; }
 
+/*----------------------------------------------*/
+
+/* héro 2 */
+
+/*------------------------------------------------ */
+
 .hero2 {
   background-image: url(../image/accueil-background2.jpg);
   background-repeat: no-repeat;
@@ -236,13 +261,50 @@ header {
   background-color: rgba(0, 0, 0, 0.38);
   height: 40vh; }
 
+/*----------------------------------------------*/
+
+/* Réalisation */
+
+/*------------------------------------------------ */
+
 .realisation {
   background-color: #f8f8f8;
   padding: 5em; }
   .realisation img {
     margin: 1em;
-    width: 500px;
+    max-width: 500px;
     height: 300px; }
+
+  .realisation_bloc {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+
+.text_hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  top: 0;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  z-index: 4;
+}
+
+.text_hover:hover {
+  color:white;
+}
+
+/*----------------------------------------------*/
+
+/* hero 3 */
+
+/*------------------------------------------------ */
 
 .hero3 {
   background-image: url(../image/accueil-background3.jpg);
@@ -251,6 +313,12 @@ header {
   background-size: cover;
   height: 40vh;
   color: white; }
+
+/*----------------------------------------------*/
+
+/* Contact */
+
+/*------------------------------------------------ */
 
 .formulaire_contact {
   background-color: #222328;
@@ -326,7 +394,116 @@ footer {
     text-align: center; }
 
 /*----------------------------------------------*/
- * /*Responsive */
+
+                 /*Responsive */
+
 /*------------------------------------------------ */
+.responsive_burger {
+  display: none;
+ }
+
+@media (max-width: 900px) {
+
+  section {
+    padding: 1em
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .responsive_burger {
+    display: block;
+    margin-right: 1em;
+  }
+
+  .menu_responsive {
+    display: block;
+  }
+
+  .main_menu {
+    display: none;
+  }
+
+  .nom {
+    padding-left: 0.5em;
+  }
+
+  .nom p {
+    font-size: 16px;
+  }
+
+  /*----------------------------------------------*/
+  /*Responsive - Bienvenue */
+  /*------------------------------------------------ */
+  .hero .bienvenue {
+    top: 20vh;
+    font-size: 14px;
+  }
+
+  /*----------------------------------------------*/
+  /*Responsive - Réalisation */
+  /*------------------------------------------------ */
+  .realisation img {
+    max-width: 100%;
+    height: 100px;
+    margin: 1em auto;
+  }
+
+  /*----------------------------------------------*/
+  /*Responsive - Compétence */
+  /*------------------------------------------------ */
+  .wrapper .competence_bloc {
+    height: auto;
+  }
+
+  .competence {
+    padding-bottom: 4em;
+  }
+
+  /*----------------------------------------------*/
+  /*Responsive - héro2 */
+  /*------------------------------------------------ */
+
+  .hero2 {
+height: 60vh;
+ }
+
+  .filtre_hero2 {
+    height: 60vh; }
+  /*----------------------------------------------*/
+  /*Responsive - Réalisation */
+  /*------------------------------------------------ */
+
+  /*----------------------------------------------*/
+  /*Responsive - héro2 */
+  /*------------------------------------------------ */
+  .hero3 {
+    height: 60vh;
+  }
+
+  .filtre_hero3 {
+    height: 60vh; }
+
+
+  /*----------------------------------------------*/
+  /*Responsive - Contact */
+  /*------------------------------------------------ */
+
+  .wrapper_contact {
+    display: block;
+    margin-bottom: 0;
+    }
+
+  .wrapper_contact .contact_adress {
+     width: auto;
+    margin-top: 2.5em;
+
+  }
+
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */

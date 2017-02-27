@@ -60,7 +60,7 @@
         // Ici il faut ajouter tout le code pour envoyer l'email.
         // Dans le code présenté au chapitre précédent, cela signifie au code entre les commentaires (1) et (2).
         echo '<div style="border:1px solid rgb(87, 181, 34); padding:5px;">';
-        echo '<p style="color:rgb(87, 181, 34);">Votre message a bien été envoyé';
+        echo '<p style="color:rgb(87, 181, 34);">Votre message a bien été envoyé.';
       } else { // S'il y a un moins une erreur
 
         echo '<div style="border:1px solid #ff0000; padding:5px;">';

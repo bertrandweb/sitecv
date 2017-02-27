@@ -7,6 +7,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bertrand Feuille | Webdéveloppeur-Webmaster</title>
 
     <!-- CSS -->
@@ -31,9 +32,11 @@
             <img src="./image/logo2_site_cv.png" alt="logo de bertrand feuille">
             <p>Bertrand Feuille</p>
         </div>
-        <nav id="header" class="navbar_header navbar navbar_default">
+        <div><i class="fa fa-bars responsive_burger" id="burger_menu" aria-hidden="true"></i></div>
+        <nav id="header" class="navbar_header navbar navbar_default main_menu">
+
             <ul>
-                <li><i class="fa fa-bars" id="burger_menu" aria-hidden="true"></i></li>
+                <li></li>
                 <li><a class="hvr-underline-reveal scroll" href="#accueil">Accueil</a></li>
                 <li><a class="hvr-underline-reveal scroll" href="#presentation">Présentation</a></li>
                 <li><a class="hvr-underline-reveal scroll" href="#competence">Compétences</a></li>
@@ -127,14 +130,14 @@
             <h3>Mes réalisations</h3>
         </div>
         <div class="wrapper">
-            <div class="realisation_bloc">
+            <div class="realisation_bloc ">
                 <a href="http://ikedori.bertrandfeuille.fr" target=_blank><img src="./image/realisation3.jpg" alt="logo de ikedori"></a>
             </div>
             <div class="realisation_bloc">
-                <a href="http://www.influenceursduweb.org/" target=_blank><img src="./image/realisation1.jpg" alt="logo des influenceurs du web"></a>
+                <a href="http://www.influenceursduweb.org/" target=_blank><img class="hvr-sweep-to-right" src="./image/realisation1.jpg" alt="logo des influenceurs du web"></a>
             </div>
             <div class="realisation_bloc">
-                <a href="http://www.webmaster-formation.fr" target=_blank><img src="./image/realisation2.jpg" alt="logo de ikedori"></a>
+                <a href="http://www.webmaster-formation.fr" target=_blank><img class="hvr-sweep-to-right" src="./image/realisation2.jpg" alt="logo de ikedori"></a>
             </div>
         </div>
     </section>
@@ -160,7 +163,7 @@
         </form>
 
     </section>
-    <section>
+    <section class="contact_me">
         <div class="wrapper_contact">
             <div class="contact_adress">
                 <p><i class="fa  fa-phone fa-2x"></i></p>
