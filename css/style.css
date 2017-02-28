@@ -19,7 +19,7 @@ h3 {
   margin-top: 10px;
   font-weight: 500;
   font-size: 32px;
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 h4, h5 {
   font-family: "Monserat", sans-serif; }
@@ -183,6 +183,14 @@ header {
 .presentation_bloc {
   background-color: white; }
 
+.photo img {
+  margin-bottom: 35px;
+}
+
+.presentation h3 {
+  margin-bottom: 30px;
+}
+
 /*----------------------------------------------*/
 
 /* Compétences */
@@ -272,9 +280,9 @@ header {
   padding: 5em; }
   .realisation img {
     margin: 1em;
-    max-width: 500px;
-    height: 300px; }
-
+    max-width: 420px;
+    height: 420px;
+  }
 
 /*----------------------------------------------*/
 
@@ -378,7 +386,7 @@ footer {
   display: none;
  }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
   section {
     padding: 1em
@@ -420,30 +428,39 @@ footer {
     margin-bottom: 5em;
   }
   .bienvenue h1 {
-    /*padding-top: 2em;*/
+    padding-top: 2.5em;
+  }
+
+  .photo img {
+    width: 200px;
+    height: 200px;
   }
 
   /*----------------------------------------------*/
   /*Responsive - Héro */
   /*------------------------------------------------ */
-  .hero {
+   .hero {
     background-size: cover;
     background-attachment: inherit;
+    padding-bottom: 4em;
   }
 
   .hero .filtre_hero {
-    height: auto;
+    height: 120%;
   }
 
-  .hero .button {
-    padding-bottom: 2em:
-  }
 
   /*----------------------------------------------*/
   /*Responsive - Réalisation */
   /*------------------------------------------------ */
+
+  .intro_realisation h3 {
+    padding-top: 1.5em;
+  }
+
   .realisation img {
-  width: 95%;
+    width:320px;
+    height:320px;
   }
 
   /*----------------------------------------------*/

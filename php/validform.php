@@ -1,46 +1,21 @@
 <?php
 
 
-    // if(isset($_POST['nom'], $_POST['email'], $_POST['message']))
-    //
-    // {
-    //     $_SESSION['verif']==false;
-    //     var_dump($_SESSION['verif']);
-    //     $TO = "contact@bertrandfeuille.fr";
-    //     $h  = "From: " . $TO;
-    //     $message = "";
-    //     while (list($key, $val) = each($_POST)) {
-    //         $message .= "$key : $val\n";
-    //     }
-    //     mail($TO, $message, $h);
-    //
-    //     Header("Location: http://localhost/sitecv/sitecv/index.php#formulaire");
-    // }
-    //
-    // else
-    // {
-    //     $_SESSION['verif']==true;
-    //     Header("Location: http://localhost/sitecv/sitecv/index.php#formulaire");
-    //
-    // }
-
-
-    // S'il y des données de postées
     if ($_SERVER['REQUEST_METHOD']=='POST') {
       // Code PHP pour traiter l'envoi de l'email
 
-      $nombreErreur = 0; // Variable qui compte le nombre d'erreur
+      $nombreErreur = 0;
       // Définit toutes les erreurs possibles
       if (!isset($_POST['email'])) { // Si la variable "email" du formulaire n'existe pas (il y a un problème)
-        $nombreErreur++; // On incrémente la variable qui compte les erreurs
+        $nombreErreur++;
         $erreur1 = '<p>Il y a un problème avec la variable "email".</p>';
-      } else { // Sinon, cela signifie que la variable existe (c'est normal)
-        if (empty($_POST['email'])) { // Si la variable est vide
-          $nombreErreur++; // On incrémente la variable qui compte les erreurs
+      } else {
+        if (empty($_POST['email'])) {
+          $nombreErreur++;
           $erreur2 = '<p>Vous avez oublié de donner votre email.</p>';
         } else {
           if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $nombreErreur++; // On incrémente la variable qui compte les erreurs
+            $nombreErreur++;
             $erreur3 = '<p>Cet email ne ressemble pas un email.</p>';
           }
         }
@@ -54,11 +29,34 @@
           $nombreErreur++;
           $erreur5 = '<p>Vous avez oublié de mettre un message.</p>';
         }
-      }    // (3) Ici, il sera possible d'ajouter plus tard un code pour vérifier un captcha anti-spam.
+      }    // Plus tard un code pour vérifier un captcha anti-spam.
 
       if ($nombreErreur==0) { // S'il n'y a pas d'erreur
         // Ici il faut ajouter tout le code pour envoyer l'email.
-        // Dans le code présenté au chapitre précédent, cela signifie au code entre les commentaires (1) et (2).
+
+          // Récupération des variables et sécurisation des données
+          $nom     = htmlentities($_POST['nom']);
+          $email   = htmlentities($_POST['email']);
+          $message = htmlentities($_POST['message']);
+
+          // Variables concernant l'email
+
+          $destinataire = 'contact@bertrandfeuille.fr';
+          $sujet = 'Nouveau message du site CV !';
+          $contenu = '<html><head><title>Titre du message</title></head><body>';
+          $contenu .= '<p><strong>Nom</strong>: '.$nom.'</p>';
+          $contenu .= '<p><strong>Email</strong>: '.$email.'</p>';
+          $contenu .= '<p><strong>Message</strong>: '.$message.'</p>';
+          $contenu .= '</body></html>'; // Contenu du message de l'email (en XHTML)
+
+
+          $headers = 'MIME-Version: 1.0'."\r\n";
+          $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
+
+          // Envoyer l'email
+          mail($destinataire, $sujet, $contenu, $headers);
+
+
         echo '<div style="border:1px solid rgb(87, 181, 34); padding:5px;">';
         echo '<p style="color:rgb(87, 181, 34);">Votre message a bien été envoyé.';
       } else { // S'il y a un moins une erreur
